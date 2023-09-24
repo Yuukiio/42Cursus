@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 #include <string.h>
-
+//The memset function writes len bytes of value c (converted to an unsigned char) to the string b.
 void	*ft_memset(void *b, int c, size_t len)
 {
 	size_t			i;
@@ -20,9 +20,6 @@ void	*ft_memset(void *b, int c, size_t len)
 	str = (unsigned char *)b;
 	i = 0;
 	while (i < len)
-	{
-		str[i] = (unsigned char)c;
-		i++;
-	}
+		*(str + i++) = (unsigned char)c;
 	return (b);
 }

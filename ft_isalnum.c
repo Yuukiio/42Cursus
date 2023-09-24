@@ -6,15 +6,17 @@
 /*   By: abolivar <abolivar@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 19:58:07 by abolivar          #+#    #+#             */
-/*   Updated: 2023/09/14 19:58:07 by abolivar         ###   ########.fr       */
+/*   Updated: 2023/09/24 05:04:00 by abolivar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 int	ft_isalnum(int c)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122) \
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122)
 		|| (c >= 48 && c <= 57))
 		return (1);
 	return (0);
 }
+/*
+return (ft_isdigit(c) || ft_isalpha(c));*/
