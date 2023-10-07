@@ -10,19 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
+
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	size_t count;
+	size_t	count;
 
 	count = 0;
-    if(dstsize == 0)
-        return (ft_strlen(src));
-    count = 0;
-    while(count < dstsize - 1 && *(src + count))
-    {
-        *(dst + count) = *(src + count);
-        count++;
-    }
-    *(dst + count) = '\0';
-    return (ft_strlen(src));
+	if (dstsize == 0)
+		return (ft_strlen(src));
+	count = 0;
+	while (count < dstsize - 1 && *(src + count))
+	{
+		*(dst + count) = *(src + count);
+		count++;
+	}
+	*(dst + count) = '\0';
+	return (ft_strlen(src));
 }
