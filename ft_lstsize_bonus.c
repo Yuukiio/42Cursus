@@ -1,25 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abolivar <abolivar@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/23 01:24:11 by abolivar          #+#    #+#             */
-/*   Updated: 2023/09/23 01:24:11 by abolivar         ###   ########.fr       */
+/*   Created: 2023/10/09 18:58:34 by abolivar          #+#    #+#             */
+/*   Updated: 2023/10/09 19:05:06 by abolivar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-char *ft_strrchr(const char *str, int character_to_find)
-{
-	int	counter;
-
-	counter = (int)ft_strlen(str);
-	while (counter >= 0)
-	{
-		if (str[counter] == (char)(character_to_find))
-			return ((char *)str + counter);
-		counter--;
-	}
-	return (NULL);
-}
