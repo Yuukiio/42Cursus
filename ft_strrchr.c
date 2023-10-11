@@ -17,7 +17,7 @@ char *ft_strrchr(const char *str, int character_to_find)
 	counter =ft_strlen(str);
 	while (counter >= 0)
 	{
-		if (str[counter] == (character_to_find))
+		if (str[counter] == (char)(character_to_find))
 			return ((char *)str + counter);
 		counter--;
 	}
