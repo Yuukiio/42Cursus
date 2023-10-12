@@ -11,23 +11,22 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-int ft_strncmp(const char *string1, const char *string2, size_t max_chars)
+int	ft_strncmp(const char *s1, const char *s2, size_t max_chars)
 {
-	size_t index;
+	size_t	index;
 
 	index = 0;
-	while ((string1[index] || string2[index]) && index < max_chars)
+	while ((s1[index] || s2[index]) && index < max_chars)
 	{
-		if ((unsigned char)(string1[index]) == (unsigned char)(string2[index]))
+		if ((unsigned char)(s1[index]) == (unsigned char)(s2[index]))
 			index++;
 		else
 		{
-			if ((unsigned char)(string1[index]) < (unsigned char)(string2[index]))
-				return -1;
-			if ((unsigned char)(string1[index]) > (unsigned char)(string2[index]))
-				return 1;
+			if ((unsigned char)(s1[index]) < (unsigned char)(s2[index]))
+				return (-1);
+			if ((unsigned char)(s1[index]) > (unsigned char)(s2[index]))
+				return (1);
 		}
 	}
-
-	return 0;
+	return (0);
 }

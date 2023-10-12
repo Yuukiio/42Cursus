@@ -10,11 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-char *ft_strrchr(const char *str, int character_to_find)
+
+char	*ft_strrchr(const char *str, int character_to_find)
 {
 	int	counter;
 
-	counter =ft_strlen(str);
+	counter = ft_strlen(str);
 	while (counter >= 0)
 	{
 		if (str[counter] == (char)(character_to_find))
