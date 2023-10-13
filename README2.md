@@ -1,5 +1,5 @@
 ##  FT_ATOI
-    >The ft_atoi converts a string containing numerical characters (like "289 or "-19") into an integer data
+    >The `ft_atoi` converts a string containing numerical characters (like "289 or "-19") into an integer data
     type. It's a useful function because it allows you to work with numeric values that are stored as text.
 
     Uses of ft_atoi function:
