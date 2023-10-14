@@ -11,8 +11,8 @@ Uses of ft_atoi function:
 
 ### Implementation of my `ft_atoi`:
     
-    ft_isspace: The function checks if the input character `c` is a whitespace character. It returns 1 if `c` is a space, 
-    tab, newline, carriage return, form feed, or vertical tab; otherwise, it returns 0.
+>ft_isspace: The function checks if the input character `c` is a whitespace character. It returns 1 if `c` is a space, 
+tab, newline, carriage return, form feed, or vertical tab; otherwise, it returns 0.
 
     ft_atoi:
     The purpose of the function is to convert a string representation of an integer (contained in the `str` parameter) into an actual integer value. 
