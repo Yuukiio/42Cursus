@@ -6,6 +6,7 @@
 
 ## Grade
 Project|Score
+-|-
 Libft|<img src="https://github.com/aflr/aflr/blob/main/src/125.PNG" width="60">
 
 ### Makefile
