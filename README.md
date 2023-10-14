@@ -65,4 +65,3 @@
 | 23  | [ft_calloc](https://github.com/Yuukiio/Libft/blob/master/ft_calloc.c)   |   |     |                                                                                      |   |     |                                                                                          |
 | 24  | [ft_strdup](https://github.com/Yuukiio/Libft/blob/master/ft_strdup.c)   |   |     |                                                                                      |   |     |                                                                                          |
 
-### Manual Code
