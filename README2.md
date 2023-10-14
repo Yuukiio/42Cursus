@@ -48,3 +48,21 @@ In summary, this function converts a string containing an integer into an intege
 ## *FT_BZERO*
 
 The purpose of the `ft_bzero` function is to set all the bytes in a specific memory block to zero, effectively erasing the content of that memory. It takes two arguments: a pointer `s` pointing to the memory block and a value `n` representing the number of bytes in that block. The function iterates through the memory block and sets each byte to zero. Essentially, this function is used to initialize or clear data in memory, ensuring it does not contain any prior information. However, in modern C programming, it is typically recommended to use the standard `memset` function for this purpose, as it is more versatile and widely supported.
+
+### *Implementation of my ft_bzero*:
+
+- `void ft_bzero(void *s, size_t n)`: This line defines the function `ft_bzero`, which takes two arguments: `s` is a pointer to the memory block to be zeroed out, and `n` is the number of bytes in that block.
+
+- `size_t i;`: This declares a variable `i` of type `size_t`, typically used for counting.
+
+- `unsigned char *str;`: This declares a pointer variable `str` of type `unsigned char`. It's used to treat the input pointer `s` as an array of bytes (unsigned characters).
+
+- `i = 0;`: It initializes the counter `i` to zero.
+
+- `str = (unsigned char *)s;`: This line casts the `void` pointer `s` into an `unsigned char` pointer `str`. This is done to ensure that we can access individual bytes in memory.
+
+- `while (i < n)`: This is a `while` loop that runs as long as `i` is less than the specified number of bytes `n`.
+
+- `str[i++] = 0;`: Within the loop, this line sets the byte at the `i`-th offset from the start of the memory block pointed to by `str` to zero (0). It increments `i` afterward, moving to the next byte.
+
+In essence, the `ft_bzero` function iterates through the memory block pointed to by `s` and sets each byte to zero using pointer arithmetic.
