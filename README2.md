@@ -45,6 +45,8 @@ Here's a breakdown of the function's steps:
 
 In summary, this function converts a string containing an integer into an integer data type, taking into account optional whitespace and a sign character. It returns the parsed integer value.
 
+---
+
 ## *FT_BZERO*
 
 The purpose of the `ft_bzero` function is to set all the bytes in a specific memory block to zero, effectively erasing the content of that memory. It takes two arguments: a pointer `s` pointing to the memory block and a value `n` representing the number of bytes in that block. The function iterates through the memory block and sets each byte to zero. Essentially, this function is used to initialize or clear data in memory, ensuring it does not contain any prior information. However, in modern C programming, it is typically recommended to use the standard `memset` function for this purpose, as it is more versatile and widely supported.
@@ -66,3 +68,10 @@ The purpose of the `ft_bzero` function is to set all the bytes in a specific mem
 - `str[i++] = 0;`: Within the loop, this line sets the byte at the `i`-th offset from the start of the memory block pointed to by `str` to zero (0). It increments `i` afterward, moving to the next byte.
 
 In essence, the `ft_bzero` function iterates through the memory block pointed to by `s` and sets each byte to zero using pointer arithmetic.
+
+---
+
+## *FT_CALLOC*
+
+`ft_calloc` is a standard library function in C that is used for dynamic memory allocation. It stands for "contiguous allocation" and is often used to allocate memory for an array of elements. `ft_calloc` is similar to the `malloc` function, but it has an additional feature: it initializes the allocated memory to zero.
+
