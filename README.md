@@ -4,7 +4,8 @@
 
 >The purpose of this project is to re-code `libc` functions, as well as other common utility functions to be reused in the subsequent 42 projects.
 
-## Files
+## Grade
+Libft|<img src="https://github.com/aflr/aflr/blob/main/src/125.PNG" width="60">
 
 ### Makefile
 - [Makefile](https://github.com/Yuukiio/Libft/blob/master/Makefile)
